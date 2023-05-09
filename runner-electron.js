@@ -5,7 +5,7 @@ const tesults = require('cypress-tesults-reporter');
 cypress.run({
   // specs to run here
   autoCancelAfterFailures: 2,
-  testingType: "e2e"
+//   testingType: "e2e"
   
 
 })
