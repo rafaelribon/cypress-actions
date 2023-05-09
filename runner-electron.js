@@ -12,6 +12,7 @@ cypress.run({
   const args = {
     target: process.env.TARGET_TOKEN_ELECTRON,
   }
+  console.log(results)
   tesults.results(results, args);
 })
 .catch((err) => {
