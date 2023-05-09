@@ -12,8 +12,13 @@ cypress.run({
 
 .then((results) => {
   
-  if (results.totalFailed == 1) {
-    console.log("Aqui")
+  if (result.failures) {
+    console.error('Could not execute tests')
+    console.error(result.message)
+    process.exit(result.failures)
+  
+//   if (results.totalFailed == 1) {
+//     console.log("Aqui")
   }
 //    console.log("results.totalFailed", results.totalFailed)
   })
