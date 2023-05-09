@@ -15,7 +15,7 @@ cypress.run({
   if (results.totalFailed == 1) {
     console.log("Aqui")
   }
-   console.log("results.totalFailed", results.totalFailed)
+//    console.log("results.totalFailed", results.totalFailed)
   })
   .catch((err) => {
     console.error(err)
