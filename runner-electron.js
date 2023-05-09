@@ -12,10 +12,10 @@ cypress.run({
 
 .then((results) => {
   
-  if (result.failures) {
+  if (results.failures) {
     console.error('Could not execute tests')
-    console.error(result.message)
-    process.exit(result.failures)
+    console.error(results.message)
+    process.exit(results.failures)
   
 //   if (results.totalFailed == 1) {
 //     console.log("Aqui")
