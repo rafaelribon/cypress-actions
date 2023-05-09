@@ -6,7 +6,7 @@ cypress.run({
   // specs to run here
 
 })
-then(result => {
+.then(result => {
   if (result.failures) {
     
     const args = {
