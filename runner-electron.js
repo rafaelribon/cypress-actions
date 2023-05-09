@@ -12,7 +12,8 @@ cypress.run({
 .then((results) => {
   
 
-  console.log(results)
+  console.log(results.totalFailed)
+  
 //   const args = {
 //     target: process.env.TARGET_TOKEN_ELECTRON,
 //   }
