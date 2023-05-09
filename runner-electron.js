@@ -11,14 +11,14 @@ cypress.run({
 })
 .then((results) => {
   
-    console.log("TESTE") ,
-  console.log(results),
-  const args = {
-    target: process.env.TARGET_TOKEN_ELECTRON,
-  }
+
+  console.log(results)
+//   const args = {
+//     target: process.env.TARGET_TOKEN_ELECTRON,
+//   }
 
   
-  tesults.results(results, args);
+//   tesults.results(results, args);
 })
 .catch((err) => {
  console.error(err)
