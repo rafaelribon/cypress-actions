@@ -11,6 +11,10 @@ cypress.run({
 })
 
 .then((results) => {
+  
+  if (results.totalFailed == 1) {
+    console.log("Aqui")
+  }
    console.log("results.totalFailed", results.totalFailed)
   })
   .catch((err) => {
