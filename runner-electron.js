@@ -4,9 +4,7 @@ const tesults = require('cypress-tesults-reporter');
 
 cypress.run({
   // specs to run here
-  autoCancelAfterFailures: 2,
-  testingType: "e2e",
-  
+
 
 })
 
@@ -15,6 +13,7 @@ cypress.run({
   if (results.totalFailed == 1) {
     console.error('Could not execute tests'),
       process.exit(results.failures)
+    process.exit(results.totalFailed)
 }
   })
   .catch((err) => {
