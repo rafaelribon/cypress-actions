@@ -4,7 +4,7 @@ const tesults = require('cypress-tesults-reporter');
 
 cypress.run({
   // specs to run here
-  autoCancelAfterFailures: 1
+  autoCancelAfterFailures: 2
   
 
 })
