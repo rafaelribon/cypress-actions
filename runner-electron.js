@@ -4,8 +4,14 @@ const tesults = require('cypress-tesults-reporter');
 
 cypress.run({
   // specs to run here
+
 })
 .then((results) => {
+   if (result.failures) {
+    console.error('Could not execute tests')
+    console.error(result.message)
+    process.exit(result.failures)
+  }
   const args = {
     target: process.env.TARGET_TOKEN_ELECTRON,
   }
