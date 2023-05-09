@@ -4,7 +4,7 @@ const tesults = require('cypress-tesults-reporter');
 
 cypress.run({
   // specs to run here
-  autoCancelAfterFailures: 2,
+  autoCancelAfterFailures: 2 | true
   testingType: "e2e"
   
 
@@ -12,7 +12,10 @@ cypress.run({
 .then((results) => {
   
 
-  console.log(results.totalFailed)
+  console.log("Testes", results.totalFailed),
+  if(results.totalFailed = 1) {
+    console.log("Teste")
+  }
   
 //   const args = {
 //     target: process.env.TARGET_TOKEN_ELECTRON,
