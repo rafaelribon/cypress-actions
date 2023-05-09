@@ -9,21 +9,20 @@ cypress.run({
   
 
 })
+
 .then((results) => {
+   console.log("results.totalFailed", results.totalFailed)
+  })
+  .catch((err) => {
+    console.error(err)
+  })
+
+
+
  
-  console.log("results.totalFailed", results.totalFailed),
-
   
-//   const args = {
-//     target: process.env.TARGET_TOKEN_ELECTRON,
-//   }
 
-  
-//   tesults.results(results, args);
-})
-.catch((err) => {
- console.error(err)
-})
+
 
 
 
