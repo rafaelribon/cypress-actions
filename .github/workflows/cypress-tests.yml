@@ -20,7 +20,9 @@ jobs:
         run: yarn install
         
       - name: Run E2E tests
+        continue-on-error: false
         run: node runner-electron.js
+        
     env:
       TARGET_TOKEN_ELECTRON: ${{ secrets.TARGET_TOKEN_ELECTRON }}
       
