@@ -43,6 +43,7 @@ jobs:
         run: node runner-chrome.js
     env:
       TARGET_TOKEN_CHROME: ${{ secrets.TARGET_TOKEN_CHROME }}
+      TESULTS: ${{ secrets.TESULTS }}
       
   cypress-firefox-tests: 
     needs: cypress-electron-tests
@@ -61,6 +62,7 @@ jobs:
         run: node runner-firefox.js
     env:
       TARGET_TOKEN_FIREFOX: ${{ secrets.TARGET_TOKEN_FIREFOX }}
+      TESULTS: ${{ secrets.TESULTS }}
   
         
     
